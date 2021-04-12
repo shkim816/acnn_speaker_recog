@@ -1,1 +1,1 @@
-# acnn_speaker
+# ACNN for Text-Independent Speaker Recognition

@@ -1,0 +1,39 @@
+name: verification_vgg_18x1
+save_dir: ./exp/
+DB: ../voxceleb1/ 
+
+#model option
+mode : iden #veri
+nc_divide: 1
+encoder_type: TAP #SAP
+batch_size: 120
+nOut: 512
+
+#optimizer
+optimizer: sgd 
+lr: 0.01
+opt_mom: 0.95 
+wd: 0.0005
+nesterov: 0 
+amsgrad: 0 
+
+#lr scheduler
+lr_decay: step
+do_lr_decay: 1
+#step
+step_size: 1
+gamma: 0.95
+#rlr
+factor: 0.1
+patience: 10
+threshold: 0.0001
+verbose: True
+
+#option
+seed: 2021
+epoch: 201
+do_test: 4 #test iteration
+max_iteration_test: 80
+save_best_only: 1
+
+

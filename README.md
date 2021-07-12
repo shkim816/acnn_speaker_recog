@@ -3,9 +3,9 @@
 Official implementation of **Adaptive Convolutional Neural Network for Text-Independent Speaker Recognition**<br>
 by Seong-Hu Kim, Yong-Hwa Park @ Human Lab, Mechanical Engineering Department, KAIST
 
-Accepted paper in [InterSpeech 2021](https://www.interspeech2021.org/)
+Accepted paper in [InterSpeech 2021](https://www.interspeech2021.org/), and paper will be available.
 
-Paper will be available.
+This code was written mainly with reference to [baseline code](https://github.com/Jungjee/RawNet).
 
 ## Adaptive Convolutional Neural Network Module
 We use two scaling maps, which are frequency and time domain, to each axis for the adaptive kernel in the ACNN module.  The adaptive kernel is created by element-wise multiplication of each output channel of the content-invariant kernel with the scaling matrix. The structure of proposed ACNN module for speaker recognition is shown as follows.
@@ -29,6 +29,18 @@ python train_model.py
 ```
 You need to adjust the training parameters in yaml before training.
 
+#### Results:
+Network              | Top-1 (%) |  Top-1 (%) | EER (%) | C_det (%) |
+---------------------|-----------|------------|---------|-----------|
+Adaptive VGG-M (N=18)| 86.51     | 95.31      | 5.68    | 0.510     |
+---------------------|-----------|------------|---------|-----------|
+Adaptive ResNet18 (N=18)| 85.84     | 95.29      | 6.18    | 0.589     |
+
 ## Pretrained models
 There are pretrained models in 'pretrained_model'. The example code for verification using the pretrained models is not provided separately.
+
+## Citation
+Citation will be updated.
+
+Please contact Seong-Hu Kim at seonghu.kim@kaist.ac.kr for any query.
 

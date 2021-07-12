@@ -8,8 +8,9 @@ Accepted paper in [InterSpeech 2021](https://www.interspeech2021.org/)
 Paper will be available.
 
 ## Adaptive Convolutional Neural Network Module
-We use two scaling maps, which are frequency and time domain, to each axis for the adaptive kernel in the ACNN module.  The adaptive kernel K˜ (X) is created by element-wise multiplication of each output channel C_{out} of the content-invariant kernel K with M(X). The structure of proposed ACNN module for speaker recognition is shown as follows.<br>
-![](./pretrained_model/ACNN_module.png)<br>
+We use two scaling maps, which are frequency and time domain, to each axis for the adaptive kernel in the ACNN module.  The adaptive kernel K˜ (X) is created by element-wise multiplication of each output channel C_{out} of the content-invariant kernel K with M(X). The structure of proposed ACNN module for speaker recognition is shown as follows.
+
+<img src="./pretrained_model/ACNN_module.png" width="700">
 
 - This module is applied to VGG-M and ResNet for text-independent speaker recognition. 
 

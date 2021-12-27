@@ -1,6 +1,6 @@
 # ACNN for Text-Independent Speaker Recognition
 
-Official implementation of **Adaptive Convolutional Neural Network for Text-Independent Speaker Recognition**<br>
+Official implementation of [**Adaptive Convolutional Neural Network for Text-Independent Speaker Recognition**<br>](https://www.isca-speech.org/archive/pdfs/interspeech_2021/kim21_interspeech.pdf)
 by Seong-Hu Kim, Yong-Hwa Park @ Human Lab, Mechanical Engineering Department, KAIST
 
 Accepted paper in [InterSpeech 2021](https://www.interspeech2021.org/), and paper will be available.
@@ -30,17 +30,26 @@ python train_model.py
 You need to adjust the training parameters in yaml before training.
 
 #### Results:
+
 Network              | Top-1 (%) |  Top-1 (%) | EER (%) | C_det (%) |
 ---------------------|-----------|------------|---------|-----------|
 Adaptive VGG-M (N=18)| 86.51     | 95.31      | 5.68    | 0.510     |
----------------------|-----------|------------|---------|-----------|
 Adaptive ResNet18 (N=18)| 85.84     | 95.29      | 6.18    | 0.589     |
 
 ## Pretrained models
 There are pretrained models in 'pretrained_model'. The example code for verification using the pretrained models is not provided separately.
 
 ## Citation
-Citation will be updated.
+
+    @inproceedings{kim21_interspeech,
+      author={Seong-Hu Kim and Yong-Hwa Park},
+      title={{Adaptive Convolutional Neural Network for Text-Independent Speaker Recognition}},
+      year=2021,
+      booktitle={Proc. Interspeech 2021},
+      pages={66--70},
+      doi={10.21437/Interspeech.2021-65}
+    }
+
 
 Please contact Seong-Hu Kim at seonghu.kim@kaist.ac.kr for any query.
 

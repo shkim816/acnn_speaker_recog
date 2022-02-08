@@ -5,7 +5,7 @@ Official implementation of
 by Seong-Hu Kim, Yong-Hwa Park @ Human Lab, Mechanical Engineering Department, KAIST<br>
 [![Interspeech](https://img.shields.io/badge/InterSpeech2021-inproceedings-orange)](https://www.isca-speech.org/archive/pdfs/interspeech_2021/kim21_interspeech.pdf) <br>
 
-Accepted paper in [InterSpeech 2021](https://www.interspeech2021.org/), and paper will be available.
+Accepted paper in [InterSpeech 2021](https://www.interspeech2021.org/).
 
 This code was written mainly with reference to [baseline code](https://github.com/Jungjee/RawNet).
 
